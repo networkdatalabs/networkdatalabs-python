@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "networkdatalabs"
+version = "0.1.0"
+description = "Official client for the Network Data Labs IP geolocation API: country, city, ASN and risk flags for any IP."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [{ name = "Network Data Labs", email = "hello@networkdatalabs.com" }]
+keywords = ["ip", "geolocation", "geoip", "asn", "ip-lookup", "vpn-detection", "ip-to-country"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Internet",
+  "Typing :: Typed",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://www.networkdatalabs.com"
+Documentation = "https://www.networkdatalabs.com/docs"
+Repository = "https://github.com/networkdatalabs/networkdatalabs-python"
+Issues = "https://github.com/networkdatalabs/networkdatalabs-python/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/networkdatalabs"]
